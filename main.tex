@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+
+% --- Page layout ---
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% --- Math ---
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+
+% --- Fonts ---
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+
+% --- References / links ---
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+% --- Bibliography ---
+\usepackage[
+    backend=biber,
+    style=authoryear,
+    sorting=nyt
+]{biblatex}
+\addbibresource{references.bib}
+
+% --- Theorem environments ---
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% --- Convenience macros ---
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+
+\title{Assorted Notes}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\input{notes/six-operations}
+\input{notes/algebraic-geometry}
+\input{notes/stacks}
+\input{notes/category}
+\input{notes/chromatic-homotopy}
+\input{notes/equivariant}
+\input{notes/k-theory}
+\input{notes/math-physics}
+\input{notes/prismatic-f-gauges}
+
+\printbibliography
+
+\end{document}
