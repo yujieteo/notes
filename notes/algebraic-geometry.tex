@@ -1,5 +1,29 @@
 \section{Algebraic geometry}
 
-One invents the notion of a diagonal map to understand separability. The diagonal map is the prototypical example of self intersection in a space.
+\subsection{Higher category theory and derived algebraic geometry}
+
+A good reference is \cite{Scholze2026GeometryHigherCategoryTheory}.
+
+I also intend to read Aoki's work on Higher Zariski Geometry. There is an adjunction between commutative algebra objects to the opposite category of locally ringed spaces. The spectrum functor assigns to a commutative its Zariski spectrum with a structure sheaf.
+
+The duality between affine schemes and commutative rings associating affine schemes to regular functions. One has to restrict to affine objects on the geometric side and glue them. 
+
+This is because affine objects have the nice property endowed by definition that higher direct images vanish or that affine morphisms are those where pullbacks are $t$-exact. Recall that pullbacks are motivated by thinking about cohomology in topological space, and then trying to find adjoint functors associated with morphisms of schemes.
+
+One then, using Serre's affineness criterion to define affine morphisms in more general contexts as those whose higher direct images vanish since the pullback is $t$-exact. 
+
+Consequently, one uses the basic idea of affine objects where for affine opens the inverse image is affine as a foundation. Then prove Serre's affineness criterion, then prove using derived algebraic geometry that the pullback is $t$-exact. I have not seen a good solution to this problem in the literature or a more general defintiion of affineness. It is hoped that \cite{Scholze2026GeometryHigherCategoryTheory} side steps these issues with the construct of Stefanich rings and the gestalten to recover perfect duality between algebra and geometry.
+
+A $t$-structure is therefore motivated by wanting objects in the heart to form an abelian category. Then, one can define exact functors that maps the heart of the first $t$-structure to the heart of the second $t$-structure. One can then define a $t$-exact functor as one that is exact on the hearts and hence ask for the pullback to be $t$-exact.
 
 Separability means diagonal pullback is a closed immersion.
+
+One invents the notion of a diagonal map to understand separability. The diagonal map is the prototypical example of self intersection in a space.
+
+\subsection{Computation on cohomology of projective space and line bundles}
+
+This follows Chapter 18 of Vakil. I also saw a calculation done by Akhil Mathew using Koszul cohomology on his blog. Other sources might be.
+
+Eventually one wants to compute cohomology of line bundles in projective space as the first example of using Serre's vanishing theorem in practice, seeing Serre duality for the first time.
+
+I also want to eventually compute or derive the Riemann-Roch formula.
